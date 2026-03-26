@@ -1,0 +1,52 @@
+{
+  "name": "@ctrl/shared-usenet",
+  "version": "0.0.0-placeholder",
+  "description": "shared types and interfaces between usenet clients",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Scott Cooper <scttcper@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scttcper/shared-usenet.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/src/index.d.js",
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "lint": "oxfmt --check && oxlint .",
+    "lint:fix": "oxfmt && oxlint . --fix",
+    "prepare": "npm run build",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@ctrl/oxlint-config": "1.4.2",
+    "@sindresorhus/tsconfig": "8.1.0",
+    "@types/node": "25.5.0",
+    "ofetch": "1.5.1",
+    "oxfmt": "0.42.0",
+    "oxlint": "1.57.0",
+    "typescript": "6.0.2"
+  },
+  "peerDependencies": {
+    "ofetch": "^1.5.0"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
