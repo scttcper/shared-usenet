@@ -42,7 +42,7 @@
   },
   "release": {
     "branches": [
-      "master"
+      "main"
     ]
   },
   "engines": {
