@@ -2,6 +2,10 @@
 
 > shared types and interfaces between usenet clients
 
+### Related Shared Package
+
+- torrent - [@ctrl/shared-torrent](https://github.com/scttcper/shared-torrent)
+
 ### Overview
 
 Using the shared surface gives you:
@@ -155,5 +159,5 @@ Key normalized concepts:
 
 #### Normalized Usenet Clients
 
-- sabnzbd - `@ctrl/sabnzbd`
-- nzbget - `@ctrl/nzbget`
+- sabnzbd - [@ctrl/sabnzbd](https://github.com/scttcper/sabnzbd)
+- nzbget - [@ctrl/nzbget](https://github.com/scttcper/nzbget)
