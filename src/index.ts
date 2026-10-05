@@ -175,7 +175,7 @@ export interface NormalizedUsenetJob {
    */
   name: string;
   /**
-   * progress percent out of 100
+   * progress from 0 to 1, same as the torrent clients
    */
   progress: number;
   isCompleted: boolean;
@@ -188,9 +188,12 @@ export interface NormalizedUsenetJob {
    */
   downloadSpeed: number;
   /**
-   * seconds until finish
+   * seconds until finish, 0 when completed, -1 when unknown (paused, no speed)
    */
   eta: number;
+  /**
+   * position in the download queue starting at 0, -1 for history items
+   */
   queuePosition: number;
   totalSize: number;
   remainingSize: number;
